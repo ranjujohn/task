@@ -1,5 +1,4 @@
 #!/bin/bash
-ip=$1
 wget -q https://s3.eu-central-1.amazonaws.com/leverton-dev-test/hello.jar
 mkdir -p /app
 cp hello.jar /app
