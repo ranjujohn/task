@@ -4,7 +4,7 @@ provider "aws" {
 resource "aws_key_pair" "mykey"
 {
   key_name = "key1"
-  public_key = "${file("ssh_keys/tmp-key.pub")}"
+  public_key = "${file("key.pub")}"
 }
 resource "aws_security_group" "allow_https" {
   name = "allow_https"
