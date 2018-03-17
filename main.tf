@@ -37,8 +37,8 @@ resource "aws_instance" "web-server" {
 #!/bin/bash
 git clone https://github.com/ranjujohn/task.git
 cd task
-chmod +x install.sh
-sudo ./install.sh
+chmod +x install_new.sh
+sudo ./install_new.sh
 EOF
   tags {
     Name = "web-server"
